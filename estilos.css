@@ -101,5 +101,8 @@ textarea {
 	#formulario .boton-enviar {
 		width: 100%;
 	}
-
+	
+	#contenedor {
+		width: 98%
+	}
 }
