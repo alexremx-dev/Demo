@@ -76,7 +76,10 @@ textarea {
 
 /*SMARTPHONE*/
 @media only screen and (max-width: 768px) {
-
+	#contenedor {
+		width: 95%
+	}
+	
 	#formulario input[type="text"], #formulario input[type="email"],#formulario input[type="url"] {
 		width: 98%;
 	}
@@ -84,16 +87,14 @@ textarea {
 	#formulario .boton-enviar {
 		width: 100%;
 	}
-
-	#contenedor {
-		width: 95%
-	}
-
 }
 
 /*TABLET*/
 @media only screen and (min-width: 769PX) and (max-width: 990px) {
-
+	#contenedor {
+		width: 98%
+	}
+	
 	#formulario input[type="text"], #formulario input[type="email"],#formulario input[type="url"] {
 		width: 98%;
 	}
@@ -102,7 +103,5 @@ textarea {
 		width: 100%;
 	}
 	
-	#contenedor {
-		width: 98%
-	}
+	
 }
