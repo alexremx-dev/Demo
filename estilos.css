@@ -77,7 +77,7 @@ textarea {
 /*SMARTPHONE*/
 @media only screen and (max-width: 768px) {
 	#contenedor {
-		width: 95%
+		width: 98%;
 	}
 	
 	#formulario input[type="text"], #formulario input[type="email"],#formulario input[type="url"] {
@@ -92,7 +92,7 @@ textarea {
 /*TABLET*/
 @media only screen and (min-width: 769PX) and (max-width: 990px) {
 	#contenedor {
-		width: 95%
+		width: 98%;
 	}
 	
 	#formulario input[type="text"], #formulario input[type="email"],#formulario input[type="url"] {
