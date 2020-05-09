@@ -1,0 +1,105 @@
+* {
+	margin-right: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'arial', sans-serif;
+	font-size: 15px;
+	line-height: 1.5em;
+	background: #111;
+}
+
+#contenedor {
+	background: #f4f4f4;
+	margin: 50px auto;
+	overflow: auto;
+	width: 60%;
+	min-height: 200px;
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 20px;
+	-o-border-radius: 12px;
+}
+
+header h1 {
+	color: #111;
+	font-size: 22px;
+	padding: 15px 0 10px 10px;
+	border-bottom:  1px solid red;
+	width: 95%;
+}
+
+#formulario {
+	width: 90%;
+	min-height: 80px;
+	margin: auto;
+	margin-top: 5%;
+	padding: 0;
+
+}
+
+
+#formulario input[type="text"], #formulario input[type="email"],#formulario input[type="url"] {
+	height: 25px;
+	width: 48%;
+	padding: 3px;
+	margin-bottom: 20px;
+	border: 1px solid #666; 
+}
+
+textarea {
+	width: 100%;
+}
+
+#formulario .boton-enviar {
+	padding: 5px;
+	width: 50%;
+	margin: 10px auto;
+	float: right;
+	border: 0;
+	color: #111;
+	font-size: 16px;
+	background-color: #35a6ee; 
+}
+
+#formulario .boton-enviar:hover {
+	background-color: #35d8ff; 
+}
+
+#formulario .sign {
+	padding: 2px;
+	color: #aaa;
+}
+
+/*MEDIA QUERIES PARA RESPONSIVE*/
+
+/*SMARTPHONE*/
+@media only screen and (max-width: 768px) {
+
+	#formulario input[type="text"], #formulario input[type="email"],#formulario input[type="url"] {
+		width: 98%;
+	}
+
+	#formulario .boton-enviar {
+		width: 100%;
+	}
+
+	#contenedor {
+		width: 95%
+	}
+
+}
+
+/*TABLET*/
+@media only screen and (min-width: 769PX) and (max-width: 990px) {
+
+	#formulario input[type="text"], #formulario input[type="email"],#formulario input[type="url"] {
+		width: 98%;
+	}
+
+	#formulario .boton-enviar {
+		width: 100%;
+	}
+
+}
