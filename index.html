@@ -31,7 +31,7 @@
 				<input type="url" name="web" placeholder="Sitio Web" />
 				<br />
 				<textarea rows="10"></textarea>
-				<div class="boton-enviar" name="botonEnviar">Enviar</div>
+				<div class="boton-enviar" name="botonEnviar">Send</div>
 
 				<br /><br />
 				<label  class="sign">By @lejandroRojas</label>
@@ -43,8 +43,9 @@
 $(document).ready (function () {
 
 	$('#botonEnviar').click(function () {
-		printLog();
+		//printLog();
 		//Browsercheck();
+		alert('Hello Alex');
 	});
 
 });
@@ -55,14 +56,14 @@ function printLog () {
 	const key_ = "Token_Rest_Id";
 	
 	//Guarda nombre & email
-	if (Token_)
-		localStorage.setItem(key_, Token_); //ejemplo nombre: Raúl Olmedo
+	//if (Token_)
+		//localStorage.setItem(key_, Token_); //ejemplo nombre: Raúl Olmedo
 
 	//const valor = localStorage.key(0);
-	const valor = localStorage.getItem(key_);
+	//const valor = localStorage.getItem(key_);
 
-	console.log(key_ + ' ' + valor);
-	alert (key_ + ' ' + valor);
+	//console.log(key_ + ' ' + valor);
+	//alert (key_ + ' ' + valor);
 
 }
 		
