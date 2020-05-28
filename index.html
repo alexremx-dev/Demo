@@ -7,6 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<meta name="viewport" content="width=divice-width">
+
+
 </head>
 <body>
 	<div id="contenedor">
@@ -37,6 +39,42 @@
 			
 		</div>
 	</div>
+	<script>
+$(document).ready (function () {
 
+	$('#botonEnviar').click(function () {
+		printLog();
+		Browsercheck();
+	});
+
+});
+		
+//Guarda y lee los valores del localstorage
+function printLog () {
+	const Token_ = 'Pablo Escobar';
+	const key_ = "Token_Rest_Id";
+	
+	//Guarda nombre & email
+	if (Token_)
+		localStorage.setItem(key_, Token_); //ejemplo nombre: Raúl Olmedo
+
+	//const valor = localStorage.key(0);
+	const valor = localStorage.getItem(key_);
+
+	console.log(key_ + ' ' + valor);
+	alert (key_ + ' ' + valor);
+
+}
+		
+function Browsercheck() {
+	var isMobile = false; //initiate as false
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	     isMobile = true;
+	     alert("is movile");
+	}
+	else
+		 alert("isn't movile");
+}
+	</script>
 </body>
 </html>
